@@ -1,4 +1,6 @@
 <% if signed_in? %>
+	<%= render 'calendar' %>
+	<%= render 'shared/group_header' %>
 	<div class="row">
 		<aside class="span4">
 			<section>
@@ -8,7 +10,8 @@
 				<%= render 'shared/micropost_form' %>
 			</section>
 		</aside>
-		<div class="span8">
+		<div class="span8 microposts-feed">
+
 			<h3>Group Feed</h3>
 			<%= render 'shared/feed' %>
 		</div>

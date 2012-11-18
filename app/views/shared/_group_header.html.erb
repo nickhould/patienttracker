@@ -1,0 +1,38 @@
+<div class="row-fluid">
+  <div class="span9 patientName"><h2>Patient Name:</h2></div>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+    <div class="well span6 topBox"><h2>Patient Status</h2></div>
+    <div class="well span6 topBox"><h2>General Info.</h2></div>
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="well span12" id="btn_bar">
+  <div class="btn" id="calbtn" onclick="openCalendar();">Schedule</div>
+  <div class="btn" id="sendBtn" data-toggle="modal" href="#myModal">Send Something</div>
+  <div class="btn" >Hide all responses</div>
+  <div id='AdServices' class="btn" onclick="Resize();">
+    Additional Services<i class="icon-chevron-down"></i>
+  </div>
+</div>
+
+
+<div class="row-fluid" id="calContainer"></div>
+  <!-- Modal -->
+  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <h3 id="myModalLabel">What would you like to send?</h3>
+  </div>
+
+  <div class="modal-body">
+    <a class="arrow left">&lsaquo;</a>
+    <a class="arrow right">&rsaquo;</a>
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>
