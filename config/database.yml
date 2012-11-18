@@ -6,9 +6,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: patienttracker_development
+  database: sample_app_development
   pool: 5
-  username: azizali
+  username: jean-nicholashould
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -17,9 +17,9 @@ development:
 test: &test
   adapter: postgresql
   encoding: unicode
-  database: patienttracker_test
+  database: sample_app_test
   pool: 5
-  username: azizali
+  username: jean-nicholashould
   password:
 
 cucumber:

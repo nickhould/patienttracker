@@ -34,7 +34,7 @@ class User < ActiveRecord::Base
 
   def feed
     # This is preliminary. See "Following users" for the full implementation.
-    Micropost.where("user_id = ?", id )
+    Micropost.where(:created_at == Date.today)
   end
 
   def following?(other_user)
