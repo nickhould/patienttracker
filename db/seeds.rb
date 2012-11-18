@@ -50,9 +50,7 @@ microposts = [{user_id: 2,
 							{user_id: 3,
 							 content: "Julia come visit Amily with tomorrow!"},
 							{user_id: 5,
-							 content: "I am out of town right now but keep us posted with the details."},
-							{user_id: 5,
-							 content: "I am out of town right now but keep us posted with the details."}]
+							 content: "I can't be there, but I used #PatientTracker to send Amily her favorite tulips today! It's cool!"}]
 
 User.create users
 Micropost.create microposts
