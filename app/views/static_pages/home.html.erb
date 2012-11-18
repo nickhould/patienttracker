@@ -1,5 +1,4 @@
 <% if signed_in? %>
-	<%= render 'calendar' %>
 	<%= render 'shared/group_header' %>
 	<div class="row-fluid">
 		<aside class="span4">
@@ -16,6 +15,7 @@
 			<%= render 'shared/feed' %>
 		</div>
 	</div>
+	<%= render 'calendar' %>
 <% else %>
 	<div class="center hero-unit">
 		<h1><%= image_tag('logo.png', width: "50%", heigth: "50%") %></h1>
@@ -24,5 +24,5 @@
 			Patient tracker is the easiest way to keep in touch with your loved ones who are in the hospital right now.
 		</h2>
 		<%=  link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-	</div>	
+	</div>
 <% end %>

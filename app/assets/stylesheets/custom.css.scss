@@ -254,12 +254,12 @@ aside {
 
 }
 
-.modal-body .imgCont {
-  height:90px;
-}
-
-.modal-body .imgBox {
+#myModal .modal-body .imgBox {
   height:80px;
+  width:80px;
+}
+#myModal .modal-body .span2:first-of-type {
+  margin-left:10px;
 }
 
 .arrow {
@@ -293,12 +293,7 @@ aside {
 	text-decoration: none;
 	opacity: 0.9;
 	filter: alpha(opacity=90);
-}
-
-#imgBin {
-  position:relative;
-  left:55px;
-}
+}	
 
 .topBox {
   min-height:180px !important;
