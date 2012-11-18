@@ -4,8 +4,27 @@
 
 <div class="row-fluid">
   <div class="span12">
-    <div class="well span6 topBox"><h2>Patient Status</h2></div>
-    <div class="well span6 topBox"><h2>General Info.</h2></div>
+    <div class="well span6 topBox">
+      <h3>Patient Status</h3>
+      <div class="btn-group">
+        <button class="btn" onclick="changeStatus(this, 'danger');" >Critical</button>
+        <button class="btn" onclick="changeStatus(this, 'warning');" >Serious</button>
+        <button class="btn" onclick="changeStatus(this, 'info');" >Fair</button>
+        <button class="btn" onclick="changeStatus(this, 'success');" >Good</button>
+      </div>
+      Amily is there <a href="#">See checking history</a>
+    </div>
+    <div class="well span6 topBox">
+      <h3>General Info.</h3>
+      <p>
+        <strong>Primary Pysician: Dr. Kumar</strong><br />
+        <i>ER - Rush University Medical Center</i><br />
+        1653 West Congress Parkway<br />
+        Chicago, IL<br />
+        (312) 942-5000<br />
+        Visiting hours: 5:00pm - 11:00pm
+      </p>
+    </div>
   </div>
 </div>
 

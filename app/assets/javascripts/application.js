@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+function resetClass(state) {
+    $(this).siblings().removeClass('btn-' + state);
+}
+
+function changeStatus(from, state) {
+
+    states = ['danger', 'warning', 'success', 'info'];
+    $(from).addClass('btn-' + state);
+    delete states[states.indexOf(state)];
+    states.map(resetClass, from);
+}
